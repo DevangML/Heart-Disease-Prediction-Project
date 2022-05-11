@@ -11,19 +11,18 @@ def relpath(p): return os.path.normpath(
     os.path.join(os.path.dirname(__file__), p))
 
 
-fPath = relpath('../heart_model.pkl')
+fPath = relpath('./heart_model.pkl')
 
 webapp = Flask(__name__)
-
 model = pickle.load(open(fPath, 'rb'))
 
 
-@app.route("/")
+@webapp.route("/",)
 def hello():
     return render_template("index.html")
 
 
-@app.route("/detail", methods=["POST"])
+@webapp.route("/detail", methods=["POST"])
 def submit():
     if request.method == "POST":
         name = request.form["Username"]
@@ -31,22 +30,23 @@ def submit():
     return render_template("detail.html", n=name)
 
 
-@app.route("/predict", methods=["POST"])
+@webapp.route("/predict", methods=["POST"])
 def predict():
     if request.method == "POST":
-        age = int(request.form[''])
-        sex = int(request.form[''])
-        cp = int(request.form[''])
-        trestbps = int(request.form[''])
-        chol = int(request.form[''])
-        fbs = int(request.form[''])
-        restecg = int(request.form[''])
-        thalach = int(request.form[''])
-        exang = int(request.form[''])
-        oldpeak = int(request.form[''])
-        slope = int(request.form[''])
-        ca = int(request.form[''])
-        thal = int(request.form[''])
+
+        age = int(request.form['age'])
+        sex = int(request.form['sex'])
+        cp = int(request.form['cp'])
+        trestbps = int(request.form['trestbps'])
+        chol = int(request.form['chol'])
+        fbs = int(request.form['fbs'])
+        restecg = int(request.form['restecg'])
+        thalach = int(request.form['thalach'])
+        exang = int(request.form['exang'])
+        oldpeak = int(request.form['oldpeak'])
+        slope = int(request.form['slope'])
+        ca = int(request.form['ca'])
+        thal = int(request.form['thal'])
 
         values = np.array([[age, sex, cp, trestbps, chol, fbs,
                           restecg, thalach, exang, oldpeak, slope, ca, thal]])
@@ -55,5 +55,5 @@ def predict():
         return render_template('predict.html', prediction=prediction)
 
 
-if __name__ = "__main__":
-    app.run(debug=True)
+if __name__ == "__main__":
+    webapp.run()
