@@ -20,17 +20,17 @@
   </div>
   <div class="results">
     {% if prediction==1 %}
-    <h1><span class='danger' id="danger">Oops! YOU HAVE CHANCES OF HEART DISEASE.<br></span></h1>
+    <h1 class='message'><span>Oops! YOU HAVE CHANCES OF HEART DISEASE</span></h1>
     <br>
-    <iframe src="https://giphy.com/embed/l3vR5kvzODSuw3bnq" width="480" height="320" frameBorder="0" class="giphy-embed"
-      allowFullScreen></iframe>
+    <img src="'../../../static/heart.png" alt="heart" width="250" height="250">
     <p>
     </p> <br>
 
-    <p class="card">Please contact nearest hospitals</p>
+    <p class='message2'>Please contact nearest hospitals</p>
     {% elif prediction==0 %}
-    <h1><span class='safe' id="safe">Congratulation!<br><br></span></h1>
-    <h1> YOU DON'T HAVE HEART DISEASE.</h1><img src="'../../../static/heart.png" alt="heart" width="250" height="250">
+    <h1 class='message'><span>Congratulation!</span></h1>
+    <h1 class='message2'> YOU DON'T HAVE HEART DISEASE.</h1><img src="'../../../static/heart.png" alt="heart"
+      width="250" height="250">
     <p></p>
     {% endif %}
   </div>
@@ -42,6 +42,24 @@
   <br>
   <br>
   <style>
+    .message {
+      font-size: 2.5vw;
+      color: rgb(255, 238, 144);
+      background-color: #4b6cb7;
+      border-radius: 1.2vw;
+      padding: 0.3vw;
+      width: max-content;
+    }
+
+    .message2 {
+      font-size: 2.5vw;
+      color: rgb(255, 238, 144);
+      background-color: #4b6cb7;
+      border-radius: 1.2vw;
+      padding: 0.3vw;
+      width: max-content;
+    }
+
     .card {
       color: rgb(255, 255, 118);
       margin: 0;
@@ -64,6 +82,14 @@
       font-size: 20px;
       padding-top: 10px;
       margin: -5px 0 0;
+    }
+
+    .results {
+      display: flex;
+      align-items: center;
+      flex-direction: column;
+      justify-content: center;
+      gap: 1vw;
     }
 
     .container1 {
@@ -130,14 +156,6 @@
       display: flex;
       flex-direction: column;
       overflow-x: hidden;
-    }
-
-    #danger {
-      color: red;
-    }
-
-    #safe {
-      color: green;
     }
   </style>
 
