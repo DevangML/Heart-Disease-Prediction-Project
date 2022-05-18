@@ -1,29 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="44d27375-2302-48ce-b533-aa6214dc77ea" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Procfile" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/.idea/Heart-Disease-Prediction-Classification-Project.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/runtime.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/.gitignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/.name" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/Heart-Disease-Prediction-Classification-Project.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/Heart-Disease-Prediction-Classification-Project.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/LICENSE" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/heart_disease.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/heart_model.pkl" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/model_jlib" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/notebook.ipynb" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/dbg.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/heart.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/mbg.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/pbg.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/detail.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/index.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/predict.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/webapp.py" beforeDir="false" />
-    </list>
+    <list default="true" id="44d27375-2302-48ce-b533-aa6214dc77ea" name="Changes" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
